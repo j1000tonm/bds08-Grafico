@@ -1,0 +1,24 @@
+.sales-by-store-container {
+  height: 420px;
+}
+
+.sales-by-store-data {
+  height: 295px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sales-by-store-quantity {
+  font-size: 36px;
+  color: var(--light-color);
+}
+
+.sales-by-store-quantity-label {
+  font-size: 18px;
+  color: var(--grey-light-color);
+}
+
+.sales-by-store-chart {
+  margin-top: 60px;
+}

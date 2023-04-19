@@ -1,0 +1,33 @@
+.filter-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.store-filter-select-container {
+  flex: 1;
+  margin-right: 10px;
+  height: 50px;
+  width: 270px;
+}
+
+.store-filter-select__control {
+  border: 1px solid var(--grey-light-color);
+  font-size: 1em;
+  letter-spacing: -0.015em;
+  border-radius: 4px !important;
+  color: var(--grey-light-color);
+  width: 270px;
+  height: 50px;
+}
+
+.store-filter-select__placeholder {
+  color: var(--grey-light-color) !important;
+}
+
+.store-filter-select__indicator-separator {
+  display: none;
+}
