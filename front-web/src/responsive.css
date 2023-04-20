@@ -1,0 +1,25 @@
+@media screen and (max-width: 1200px) {
+  .app-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #root .app-container {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .filter-container .base-card {
+    flex-direction: column;
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sales-by-store-data {
+    flex-direction: column;
+    border: 1px solid red;
+  }
+}

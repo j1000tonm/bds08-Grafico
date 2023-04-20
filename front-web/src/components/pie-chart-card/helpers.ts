@@ -23,8 +23,12 @@ export const buildPieChartConfig = (labels: string[] = [], name: string) => {
       labels: {
         colors: ['#8D8D8D']
       },
+      customLegendItems: ['Masculino', 'Feminino', 'Outro'],
       fontFamily: 'Ubuntu, sans-serif',
       fontSize: '16px',
+      offsetX: 70,
+      width: 120,
+      horizontalAlign: 'left',
       itemMargin: {
         vertical: 5
       }
@@ -36,7 +40,7 @@ export const buildPieChartConfig = (labels: string[] = [], name: string) => {
       pie: {
         size: 400,
         donut: {
-          size: '70%',
+          size: '65%',
           labels: {
             show: true,
             name: {
