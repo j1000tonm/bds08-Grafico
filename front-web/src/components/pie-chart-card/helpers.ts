@@ -23,7 +23,6 @@ export const buildPieChartConfig = (labels: string[] = [], name: string) => {
       labels: {
         colors: ['#8D8D8D']
       },
-      customLegendItems: ['Masculino', 'Feminino', 'Outro'],
       fontFamily: 'Ubuntu, sans-serif',
       fontSize: '16px',
       offsetX: 70,
@@ -34,7 +33,10 @@ export const buildPieChartConfig = (labels: string[] = [], name: string) => {
       }
     },
     dataLabels: {
-      enabled: false
+      enabled: true,
+      style: {
+        colors: ['#fff']
+      }
     },
     plotOptions: {
       pie: {
@@ -44,6 +46,7 @@ export const buildPieChartConfig = (labels: string[] = [], name: string) => {
           labels: {
             show: true,
             name: {
+              fontSize: '16px',
               show: true,
               offsetY: 10,
               formatter: function () {

@@ -1,17 +1,16 @@
 .sales-by-store-container {
-  height: 520px;
-  border: 1px solid blue;
+  height: 420px;
+  padding-left: 40px;
 }
 
 .sales-by-store-data {
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .sales-by-store-quantity-container {
-  margin-top: 40px;
-  margin-left: 15px;
-  width: 90%;
-  border: 1px solid black;
+  width: 100%;
 }
 
 .sales-by-store-quantity {
@@ -21,11 +20,16 @@
 
 .sales-by-store-quantity-label {
   font-size: 18px;
+  display: block;
   color: var(--grey-light-color);
 }
 
 .sales-by-store-chart {
   height: 360px;
-  margin-top: 50px;
-  border: 1px solid green;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.pie-chart-card {
+  width: 100%;
 }

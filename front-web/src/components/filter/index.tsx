@@ -34,26 +34,24 @@ function Filter({ onSubmitFilter }: Props) {
   }, []);
 
   return (
-    <div className="filter-container base-card">
-      <form action="" className="store-filter-form">
-        <div className="store-filter-select-container">
-          <Controller
-            name="store"
-            control={control}
-            render={({ field }) => (
-              <Select
-                {...field}
-                options={selectStore}
-                isClearable
-                classNamePrefix="filter-store-select"
-                onChange={(value) => handleChangeStore(value as Store)}
-                getOptionLabel={(store: Store) => store.name}
-                getOptionValue={(store: Store) => String(store.id)}
-              />
-            )}
-          />
-        </div>
-      </form>
+    <div className="base-card filter-container">
+      <div className="store-filter-select-container">
+        <Controller
+          name="store"
+          control={control}
+          render={({ field }) => (
+            <Select
+              {...field}
+              options={selectStore}
+              isClearable
+              classNamePrefix="filter-store-select"
+              onChange={(value) => handleChangeStore(value as Store)}
+              getOptionLabel={(store: Store) => store.name}
+              getOptionValue={(store: Store) => String(store.id)}
+            />
+          )}
+        />
+      </div>
     </div>
   );
 }

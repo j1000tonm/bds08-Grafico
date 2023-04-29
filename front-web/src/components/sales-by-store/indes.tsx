@@ -22,11 +22,12 @@ function SalesByStore({ filterData }: Props) {
       setSalesSummary(newSalesSummary);
       const newSalesByGender = buildSalesByGenderChart(response.data);
       setsalesByGender(newSalesByGender);
+      console.log(newSalesByGender);
     });
   }, [params]);
 
   return (
-    <div className="sales-by-store-container base-card">
+    <div className="base-card sales-by-store-container">
       <div className="sales-by-store-data">
         <div className="sales-by-store-quantity-container">
           <h2 className="sales-by-store-quantity">{formatPrice(salesSummary)}</h2>

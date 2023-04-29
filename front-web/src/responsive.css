@@ -1,25 +1,57 @@
 @media screen and (max-width: 1200px) {
+  /* abaixo de 1200 vai aplicar isso */
   .app-container {
     flex-direction: column;
+  }
+
+  .pie-chart-card {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 992px) {
+  /* abaixo de 992 vai aplicar isso */
   #root .app-container {
     padding: 0 15px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .filter-container .base-card {
+  /* abaixo de 768 vai aplicar isso */
+  #root .app-container {
+    padding: 0 40px;
+  }
+
+  .sales-by-store-container.base-card {
+    height: 515px;
+  }
+
+  .sales-by-store-data {
     flex-direction: column;
-    height: 130px;
+  }
+
+  .sales-by-store-quantity-container {
+    margin-top: 40px;
+  }
+
+  .pie-chart-card {
+    margin-top: 20px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .sales-by-store-data {
-    flex-direction: column;
-    border: 1px solid red;
+  /* abaixo de 576 vai aplicar isso */
+  #root .app-container {
+    padding: 0 10px;
+  }
+
+  .filter-container.base-card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  .sales-by-store-container.base-card {
+    padding-left: 10px;
   }
 }
